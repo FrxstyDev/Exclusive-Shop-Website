@@ -102,3 +102,27 @@ footer {
 .footer-section p {
     margin: 0;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block; /* Ensure icons are treated as inline-block elements */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px; /* Ensure the icon maintains its aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom effect on icon */
+
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+
+}
