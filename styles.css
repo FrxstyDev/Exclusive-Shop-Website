@@ -12,7 +12,43 @@ header {
     text-align: center;
 }
 
-.logo {
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none;
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fall 3s linear infinite;
+  }
+  
+  .snowflake::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  .logo {
     width: 150px;
     height: auto;
 }
@@ -51,18 +87,19 @@ nav ul li a {
 }
 
 .product-card {
+    margin: 10px; /* add some margin to create space between cards */
+    display: inline-block; /* make cards display inline */
+  }
+
+  .product-card img {
+    width: 70%;
+    height: 100%;
+    border-radius: 9px;
+    max-height: 150px; /* Adjust the height to match the new image size */
+    margin: 0 auto;
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    width: 250px; /* Adjusted width to match the new size */
-    margin: 0 auto;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-height: 150px; /* Adjust the height to match the new image size */
 }
 
 .buy-button {
@@ -122,7 +159,16 @@ footer {
 
 }
 
-.social-icons a:hover img {
-    transform: scale(1.2); /* Zoom effect on hover */
-
-}
+.contact-icons {
+    list-style: none; /* remove the dot */
+    display: flex; /* make the icons horizontal */
+    justify-content: space-between; /* evenly space the icons */
+  }
+  
+  .contact-icons li {
+    margin-right: 10px; /* add some space between the icons */
+  }
+  
+  .contact-icons i {
+    color: #ffffff; /* make the icons white */
+  }
