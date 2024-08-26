@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/1277628176956133522/1277631186419580928/1679133681885.png?ex=66cdde44&is=66cc8cc4&hm=2d6b218912232a92df33b8ceb207b023c90544a120fab4de8d8e7a36e3038328&" alt="Exclusive Website Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h1>Welcome to Exclusive Website</h1>
+        <p>High-Quality Products</p>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Popular Products</h2>
+        <div class="product-grid">
+            <!-- Repeat this block for each product -->
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1253501447044075587/1277666452534591671/shopitem.png?ex=66cdff1c&is=66ccad9c&hm=39acce27090ecff1b61b37b58fc2add0b93e2a4532635a1467154dff64b7aba6&" alt="Product 1">
+                <h3>Exclusive Cheat</h3>
+                <p>$16,75/€15</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                    <input type="hidden" name="business" value="businessbehyc@gmail.com">
+                    <input type="hidden" name="item_name" value="Product 1">
+                    <input type="hidden" name="amount" value="19.99">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="submit" value="Continue" class="buy-button">
+                </form>
+            </div>
+            <!-- Repeat until all 7 products are added -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Fast Support</h3>
+                <p>Fastest and best Support is a Must.</p>
+            </div>
+            <div class="footer-section">
+                <h3>High Quality</h3>
+                <p>All our Products are hand-tested with utmost quality standards.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@exclusivewebsite.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
